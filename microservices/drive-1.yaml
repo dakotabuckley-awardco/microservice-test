@@ -1,0 +1,12 @@
+microservice:
+  name: drive-1
+
+dev:
+  enabled: "true"
+  values:
+    resources:
+      limits:
+        cpu: "300m"
+        memory: "256Mi"
+  environment: dev
+  project: default

@@ -1,0 +1,20 @@
+microservice:
+  name: bouncer-1
+
+dev:
+  enabled: "true"
+  targetRegions:
+    - region: westus2
+      values:
+        resources:
+          limits:
+            cpu: "700m"
+            memory: "256Mi"
+    - region: eastus2
+      values:
+        resources:
+          limits:
+            cpu: "200m"
+            memory: "400Mi"
+  environment: dev
+  project: default
