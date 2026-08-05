@@ -15,6 +15,7 @@ dev:
           limits:
             cpu: "700m"
             memory: "256Mi"
+        replicaCount: 5
     - region: eastus2
   environment: dev
   project: default
