@@ -8,13 +8,13 @@ dev:
       limits:
         cpu: "1200m"
         memory: "260Mi"
-  targetRegions:
-    - region: westus2
-      values:
-        resources:
-          limits:
-            cpu: "700m"
-            memory: "256Mi"
-        replicaCount: 3
+  # targetRegions:
+    # - region: westus2
+    #   values:
+    #     resources:
+    #       limits:
+    #         cpu: "700m"
+    #         memory: "256Mi"
+    #     replicaCount: 3
   environment: dev
   project: default
