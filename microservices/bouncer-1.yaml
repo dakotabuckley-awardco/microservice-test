@@ -9,19 +9,19 @@ dev:
         cpu: "1200m"
         memory: "260Mi"
   targetRegions:
-    - region: westus2
-      values:
-        resources:
-          limits:
-            cpu: "700m"
-            memory: "256Mi"
-        replicaCount: 3
-    - region: eastus2
-      values:
-        resources:
-          limits:
-            cpu: "1000m"
-            memory: "270Mi"
-        replicaCount: 3
+    - region: westus2 # Dev cluster
+      # values:
+      #   resources:
+      #     limits:
+      #       cpu: "700m"
+      #       memory: "256Mi"
+      #   replicaCount: 3
+    - region: eastus2 # Infra cluster
+      # values:
+      #   resources:
+      #     limits:
+      #       cpu: "1000m"
+      #       memory: "270Mi"
+      #   replicaCount: 3
   environment: dev
   project: default
