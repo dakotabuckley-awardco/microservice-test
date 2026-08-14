@@ -28,11 +28,11 @@ microservice:
 
 dev:
   enabled: "true"
-  # values:
-  #   resources:
-  #     limits:
-  #       cpu: "1200m"
-  #       memory: "260Mi"
+  values:
+    resources:
+      limits:
+        cpu: "1200m"
+        memory: "260Mi"
   # targetRegions:
   #   - region: westus2 # Dev cluster
   #     values:
