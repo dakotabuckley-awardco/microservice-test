@@ -10,12 +10,12 @@ dev:
         memory: "260Mi"
   targetRegions:
     - region: westus2 # Dev cluster
-      # values:
-      #   resources:
-      #     limits:
-      #       cpu: "700m"
-      #       memory: "256Mi"
-      #   replicaCount: 3
+      values:
+        resources:
+          limits:
+            cpu: "700m"
+            memory: "256Mi"
+        replicaCount: 3
     - region: eastus2 # Infra cluster
       # values:
       #   resources:
